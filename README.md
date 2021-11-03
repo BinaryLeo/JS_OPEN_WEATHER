@@ -31,6 +31,8 @@ This project was built using the following technologies:
 - Changes background-image based on current weather.
 - Changes the temperature from Fahrenheit to Celsius by clicking the temperature element
 
+![Animação](https://user-images.githubusercontent.com/72607039/140175190-a6b0b255-1332-4704-90ec-af4792060263.gif)
+
 
 ## 🚀 how to use
 
