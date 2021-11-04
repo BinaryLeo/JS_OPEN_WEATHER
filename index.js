@@ -57,11 +57,33 @@ function getWeather(latitude, longitude) {
 }
 //Display weather to UI
 function displayWeather() {
-  let state= weather.description.replace(" ", "")
-  //console.log(state); 
-  bg.style.backgroundImage = `url(img/${state}.jpg)`;
-  // change background image according to the weather description
-  //https://openweathermap.org/weather-conditions
+
+  //Random picture loader
+ //https://openweathermap.org/weather-conditions
+  let state = weather.description.replace(" ", "");
+  let rmd = Math.floor(Math.random() * 5) + 1;
+  if (state.includes("clouds")) { // * Done
+    bg.style.backgroundImage = `url(img/clouds/${rmd}.jpg)`; 
+  } else if (state.includes("rain")) { // * Done
+    bg.style.backgroundImage = `url(img/rain/${rmd}.jpg)`;
+  } else if (state.includes("thunderstorm")) {// * Done
+    bg.style.backgroundImage = `url(img/thunderstorm/${rmd}.jpg)`;
+  }else if (state.includes("drizzle")) {// * Done
+    bg.style.backgroundImage = `url(img/rain/${rmd}.jpg)`;
+  }else if (state.includes("snow")) {// * Done
+    bg.style.backgroundImage = `url(img/snow/${rmd}.jpg)`;
+  }else if (state.includes("mist")) {// * Done
+    bg.style.backgroundImage = `url(img/atmosphere/mist.jpg)`;
+  }else if (state.includes("fog")) {// * Done
+    bg.style.backgroundImage = `url(img/atmosphere/fog.jpg)`; 
+  }else if (state.includes("sky")) {// * Done
+    bg.style.backgroundImage = `url(img/atmosphere/clearsky.jpg)`;
+  }else if (state.includes("tornado")) {// * Done
+    bg.style.backgroundImage = `url(img/atmosphere/tornado.jpg)`;
+  }else{
+    bg.style.backgroundImage = `url(img/default.jpg)`;
+  }
+ 
 
   iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
   tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
