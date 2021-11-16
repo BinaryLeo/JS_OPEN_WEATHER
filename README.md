@@ -1,6 +1,15 @@
 # JS_OPEN_WEATHER
 A custom application to display the weather from your current location using the Open WeatherMAP API
 
+Click below and access the project by GitHub Pages:
+https://binaryleo.github.io/JS_OPEN_WEATHER/
+
+
+Maybe you need to check this article to run that app on github pages 
+
+https://support.mozilla.org/en-US/kb/mixed-content-blocking-firefox EN
+
+https://support.mozilla.org/pt-PT/kb/bloqueio-de-conteudo-misto-no-firefox PT-BR
 
 <h1 align="center"> </h1>
 
